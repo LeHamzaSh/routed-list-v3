@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link :to="{name: 'Home'}" class="routed-links"><button class="btn btn-danger rounded-4">View All Tasks</button></router-link>
+    <router-link :to="{name: 'About'}" class="routed-links"><button class="btn btn-danger rounded-4">Add New Task</button></router-link>
   </div>
   <router-view/>
 </template>
@@ -27,4 +27,17 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.d-flex{
+  background-color: black;
+  align-items: center;
+  height: 50px;
+  justify-content: center;
+}
+
+.routed-links{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 </style>
