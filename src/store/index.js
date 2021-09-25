@@ -37,10 +37,10 @@ export default createStore({
     },
 
     editedItem(state,index){
-      // state.task = state.tasks[index].name
-      // console.log(index)
-      // state.editedItem = index
-      // console.log(state.editedItem)
+      state.task = state.tasks[index].name
+      console.log(index)
+      state.editedItem = index
+      console.log(state.editedItem)
     },
 
     statusChange(state, index){
