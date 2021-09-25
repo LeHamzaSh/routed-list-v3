@@ -16,7 +16,8 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px;
+  background-color: black;
 }
 
 #nav a {
@@ -26,13 +27,6 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
-
-.d-flex{
-  background-color: black;
-  align-items: center;
-  height: 50px;
-  justify-content: center;
 }
 
 .routed-links{
